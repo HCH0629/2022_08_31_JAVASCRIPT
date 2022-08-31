@@ -14,7 +14,7 @@ $(function(){
    ctx = $("#myCanvas")[0].getContext("2d");
 
    imgMain = new Image()
-   imgMain.src = "images/spriteSheet.png";
+   imgMain.src = "/20220731_rpg/images/spriteSheet.png";
    currentImgMain = {
       "x":0,
       "y":0
@@ -25,10 +25,10 @@ $(function(){
    }
 
    imgMountain = new Image()
-   imgMountain.src = "images/material.png";
+   imgMountain.src = "/20220731_rpg/images/material.png";
 
    imgEnemy = new Image()
-   imgEnemy.src = "images/Enemy.png";
+   imgEnemy.src = "/20220731_rpg/images/Enemy.png";
 
    imgMountain.onload = function(){
       imgEnemy.onload = function(){
@@ -56,8 +56,8 @@ $(document).on("keydown", function(event){
       "y":-1
    };
    event.preventDefault();
-   console.log(event.code);
-   switch(event.code){
+   console.log(event);
+   switch(event.originalEvent.code){
       case "ArrowLeft":
          targetImg.x = currentImgMain.x - gridLength;
          targetImg.y = currentImgMain.y;

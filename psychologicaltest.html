@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./20220724_random/random.css" rel="stylesheet">
+    <link href="./20220730_psychologicaltest/style.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -29,18 +29,18 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Random_Selector<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="random_selector.html">Random_Selector</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="club_course.html">club_course</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="psychologicaltest.html">psychologicaltest</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="rpg.html">rpg</a>
-      </li>
+                <a class="nav-link" href="club_course.html">club_course</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">psychologicaltest<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="rpg.html">rpg</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
@@ -62,17 +62,12 @@
       <hr class="featurette-divider">
       <div class="container marketing">
         
-        <h1>今晚吃什麼</h1>
-        <input type="button" value="click me">
-        <ul id="food">
-            <li>拉麵</li>
-            <li>滷肉飯</li>
-            <li>水餃</li>
-        </ul>
-        <img with="80%" alt="一張圖片">
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-        <script src="random.js" async defer></script>
+        <h1>你今年的愛情是什麼滋味？</h1>
+        <div>
+            <h2 id="questions"></h2>
+            <div id="options"></div>
+        </div>
+        <input id="startButton" type="button" value="開始作答">
 
         <hr class="featurette-divider">
 
@@ -98,8 +93,8 @@
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="assets/js/vendor/popper.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="./20220724_random/random.js"></script>
-    <script src="./20220724_random/random.css"></script>
+    <script src="./20220730_psychologicaltest/data.js"></script>
+    <script src="./20220730_psychologicaltest/main.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
   </body>
